@@ -30,7 +30,7 @@ class LinearRegression:
 
 
     def gradient_dec(self, X, y, pred_y):
-        _, n = X.shape
+        n, _ = X.shape
 
         # derivative terms for weights and bias
         w_grad = (1 / n) * np.dot(X.T, (pred_y - y))

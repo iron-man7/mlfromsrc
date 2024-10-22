@@ -19,6 +19,5 @@ pred = model.predict(X[-5:])
 print("pred", pred)
 print("expected", y[-5:])
 
-#acc = np.sum(y[-5:] - pred) / len(y[-5:])
 acc = np.sum(pred == y[-5:]) / len(y[-5:])
 print("acc", acc)
